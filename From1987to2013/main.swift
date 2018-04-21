@@ -8,10 +8,7 @@
 
 import Foundation
 
-var givenInput : String
 var inputYear = 0
-
-var nextDistinct : Int
 var testingYear : String
 
 while true {
@@ -42,7 +39,6 @@ while true {
         print("The next distinct year is \(testingYear)")
         break
     } else {
-        //REMOVE ENTRIES IN DICTIONARY HERE
         continue
     }
 }
