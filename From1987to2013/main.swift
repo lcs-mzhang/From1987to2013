@@ -12,10 +12,14 @@ var inputYear = 0
 var testingYear : String
 
 while true {
+    print("What is the starting year?")
     guard let givenInput = readLine() else {
         continue
     }
     guard let integerInput = Int(givenInput) else {
+        continue
+    }
+    if integerInput > 10000 || integerInput < 0 {
         continue
     }
     inputYear = integerInput
@@ -35,7 +39,7 @@ while true {
         }
     }
     
-    if frequency.count == 4 {
+    if frequency.count == testingYear.count {
         print("The next distinct year is \(testingYear)")
         break
     } else {
